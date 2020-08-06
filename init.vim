@@ -34,3 +34,4 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
 nnoremap <leader>p :Files<cr>
 nnoremap <leader>f :Ag<space>
+nnoremap <leader>k vatzf
