@@ -28,6 +28,8 @@ set wrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set colorcolumn=+1
+
 
 let mapleader="\<space>"
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
@@ -36,3 +38,5 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 nnoremap <leader>p :Files<cr>
 nnoremap <leader>f :Ag<space>
 nnoremap <leader>k vatzf
+nnoremap <leader>c :set textwidth=72<cr>
+nnoremap <leader>C :set textwidth&<cr>
