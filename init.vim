@@ -5,7 +5,6 @@ Plug 'posva/vim-vue'
 Plug 'morhetz/gruvbox'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
-Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
