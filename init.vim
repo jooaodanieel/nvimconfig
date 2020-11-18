@@ -37,5 +37,5 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 nnoremap <leader>p :Files<cr>
 nnoremap <leader>f :Ag<space>
 nnoremap <leader>k vatzf
-nnoremap <leader>c :set textwidth=72<cr>
+nnoremap <leader>c :set textwidth=80<cr>
 nnoremap <leader>C :set textwidth&<cr>
