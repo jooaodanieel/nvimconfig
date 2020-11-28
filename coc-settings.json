@@ -8,6 +8,7 @@
     "typescript",
     "typescriptreact"
   ],
+  "eslint.autoFixOnSave": true,
   "diagnostic.errorSign": "(e)",
   "diagnostic.warningSign": "(w)",
   "diagnostic.infoSign": "(i)"

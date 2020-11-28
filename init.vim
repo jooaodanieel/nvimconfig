@@ -29,6 +29,14 @@ set shiftwidth=2
 set expandtab
 set colorcolumn=+1
 
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'css': ['prettier'],
+\}
+
+let g:ale_fix_on_save = 1
+let b:ale_linter_aliases = ['javascript', 'vue']
+let b:ale_linters = ['eslint', 'vls', 'prettier']
 
 let mapleader="\<space>"
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
