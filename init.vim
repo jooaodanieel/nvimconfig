@@ -12,6 +12,7 @@ Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
