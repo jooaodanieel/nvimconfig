@@ -13,6 +13,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -29,6 +30,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set colorcolumn=+1
+set encoding=UTF-8
 
 let g:ale_fixers = {
 \   'javascript': ['prettier'],
@@ -45,6 +47,7 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
 nnoremap <leader>p :Files<cr>
 nnoremap <leader>f :Ag<space>
+nnoremap <leader>t :NERDTree<cr>
 nnoremap <leader>k vatzf
 nnoremap <leader>c :set textwidth=100<cr>
 nnoremap <leader>C :set textwidth&<cr>
