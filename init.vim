@@ -1,6 +1,5 @@
 call plug#begin()
 
-Plug 'elixir-editors/vim-elixir'
 Plug 'posva/vim-vue'
 Plug 'morhetz/gruvbox'
 Plug 'terryma/vim-multiple-cursors'
@@ -11,7 +10,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 
@@ -47,7 +45,7 @@ nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
 nnoremap <leader>p :Files<cr>
 nnoremap <leader>f :Ag<space>
-nnoremap <leader>t :NERDTree<cr>
+nnoremap <leader>t :NERDTreeToggle<cr>
 nnoremap <leader>k vatzf
 nnoremap <leader>c :set textwidth=100<cr>
 nnoremap <leader>C :set textwidth&<cr>
