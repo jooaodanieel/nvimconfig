@@ -37,7 +37,8 @@ let g:ale_fixers = {
 
 let g:ale_fix_on_save = 1
 let b:ale_linter_aliases = ['javascript', 'vue']
-let b:ale_linters = ['eslint', 'vls', 'prettier']
+let b:ale_linters = ['eslint']
+let b:ale_fixers = ['prettier']
 
 let mapleader="\<space>"
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
