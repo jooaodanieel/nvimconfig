@@ -1,9 +1,9 @@
 call plug#begin()
 
+Plug 'vim-airline/vim-airline'
 Plug 'posva/vim-vue'
 Plug 'morhetz/gruvbox'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'sheerun/vim-polyglot'
+Plug 'mg979/vim-visual-multi'
 Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -31,14 +31,14 @@ set colorcolumn=+1
 set encoding=UTF-8
 
 let g:ale_fixers = {
-\   'javascript': ['prettier'],
 \   'css': ['prettier'],
 \}
 
 let g:ale_fix_on_save = 1
+let g:ale_completion_enabled = 1
 let b:ale_linter_aliases = ['javascript', 'vue']
 let b:ale_linters = ['eslint']
-let b:ale_fixers = ['prettier']
+let b:ale_fixers = ['eslint']
 
 let mapleader="\<space>"
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>

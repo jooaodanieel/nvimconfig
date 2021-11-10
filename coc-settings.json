@@ -11,5 +11,6 @@
   "eslint.autoFixOnSave": true,
   "diagnostic.errorSign": "(e)",
   "diagnostic.warningSign": "(w)",
-  "diagnostic.infoSign": "(i)"
+  "diagnostic.infoSign": "(i)",
+  "tsserver.enable": true
 }
