@@ -3,7 +3,6 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'posva/vim-vue'
 Plug 'morhetz/gruvbox'
-Plug 'mg979/vim-visual-multi'
 Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -12,6 +11,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'kkvh/vim-docker-tools'
 
 call plug#end()
 
@@ -30,6 +30,10 @@ set expandtab
 set colorcolumn=+1
 set encoding=UTF-8
 
+" Close the tab if NERDTree is the only window remaining in it.
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+
 let g:ale_fixers = {
 \   'css': ['prettier'],
 \}
@@ -43,6 +47,8 @@ let b:ale_fixers = ['eslint']
 let mapleader="\<space>"
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
+
+nnoremap <leader>dk :DockerToolsToggle<cr>
 
 nnoremap <leader>p :Files<cr>
 nnoremap <leader>f :Ag<space>
