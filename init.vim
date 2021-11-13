@@ -1,17 +1,17 @@
 call plug#begin()
 
 Plug 'vim-airline/vim-airline'
-Plug 'posva/vim-vue'
 Plug 'morhetz/gruvbox'
 Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'kkvh/vim-docker-tools'
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
 
 call plug#end()
 
@@ -29,6 +29,10 @@ set shiftwidth=2
 set expandtab
 set colorcolumn=+1
 set encoding=UTF-8
+
+source ~/.config/nvim/lsp-config.vim
+luafile ~/.config/nvim/compe-config.lua
+luafile ~/.config/nvim/lsp-plugins.lua
 
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
