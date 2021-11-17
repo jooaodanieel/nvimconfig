@@ -10,3 +10,5 @@ require'lspconfig'.tsserver.setup{}
 -- npm install -g vls
 require'lspconfig'.vuels.setup{}
 
+-- gem install --user-install solargraph
+require'lspconfig'.solargraph.setup{}

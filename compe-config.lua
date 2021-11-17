@@ -64,3 +64,6 @@ require('lspconfig')['tsserver'].setup {
 require('lspconfig')['vuels'].setup {
   capabilities = capabilities
 }
+require('lspconfig')['solargraph'].setup {
+  capabilities = capabilities
+}
