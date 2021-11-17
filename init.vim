@@ -1,7 +1,12 @@
 call plug#begin()
 
-Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
+Plug 'gilgigilgil/anderson.vim'
+Plug 'cocopon/iceberg.vim'
+Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'mhartington/oceanic-next'
+
+Plug 'vim-airline/vim-airline'
 Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -19,8 +24,13 @@ Plug 'hrsh7th/nvim-cmp'
 
 call plug#end()
 
-colorscheme gruvbox
 set background=dark
+
+autocmd BufEnter * colorscheme gruvbox
+autocmd BufEnter *.rb colorscheme hybrid_material
+autocmd BufEnter *.json colorscheme hybrid_material
+autocmd BufEnter *.vue colorscheme OceanicNext
+autocmd BufEnter *.ts colorscheme anderson
 
 set hidden
 set number
