@@ -12,3 +12,6 @@ require'lspconfig'.vuels.setup{}
 
 -- gem install --user-install solargraph
 require'lspconfig'.solargraph.setup{}
+
+-- see https://github.com/fwcd/kotlin-language-server/blob/main/BUILDING.md
+require'lspconfig'.kotlin_language_server.setup{}
