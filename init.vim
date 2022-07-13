@@ -24,6 +24,8 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 
+Plug 'udalov/kotlin-vim'
+
 call plug#end()
 
 set background=dark
